@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- font awesome -->
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- googel font -->
+    <!-- swipper js link -->
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css">
+    
+    <!-- swipper js link -->
+    <!-- tailwindcss and daisy ui -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- tailwindcss and daisy ui -->
+  <style>
+        .sans-serif{
+            font-family: 'Poppins', sans-serif;
+        }
+      </style>
+<!-- custom css link -->
+<link rel="stylesheet" href="./css/style.css">
+<!-- custom css link -->
+    <title>CarServe Web Template</title>
+</head>
+<body class = "sans-serif" >
+   <header>
+    <!-- <div class="top-bar bg-light">
+        <div class="container mx-auto px-4">
+            <div class = "hidden lg:block">
+                <div class="top-bar-row  flex justify-between h-12 items-center text-sm ">
+                    <div class="left-items flex gap-5">
+                        <div>
+                            <p><i class="fa-solid fa-location-dot text-main mr-1"></i> 123 Street, New York, USA</p>
+                        </div>
+                        <div>
+                            <p><i class="fa-solid fa-clock text-main mr-3"></i>Mon - Fri : 10.00 AM - 8 PM</p>
+                        </div>
+                    </div>
+                    <div class="right-items flex items-center gap-12">
+                        <div>
+                            <p><i class = "fa-solid fa-phone text-main mr-3"></i>+012 345 678</p>
+                        </div>
+                        <div>
+                            <p>
+                               <a href="http://www.facebook.com" target="_blank"> <i class="fa-brands fa-square-facebook text-main  p-3 bg-white"></i></i></a>
+                               <a href="http://www.twitter.com" target="_blank"> <i class = "fa-brands fa-twitter text-main p-3 bg-white"></i></a>
+                               <a href="http://www.whatsapp.com" target="_blank"> <i class = "fa-brands fa-whatsapp text-main p-3 bg-white"></i></a>
+                               <a href="http://www.telegram.com" target="_blank"> <i class = "fa-brands fa-telegram text-main p-3 bg-white"></i></a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <!-- navbar -->
+        <div class="navb bg-white lg-size lg:block hidden">
+            <div class="container mx-auto px-4">
+                <nav class = "flex justify-between items-center h-20">
+                    <div class="logo">
+                        <a class = "text-main text-4xl" href="#"> <span class = "uppercase">W</span>oo<span class = "uppercase">dy</span></a>
+                    </div>
+                    <ul class = "flex gap-8">
+                        <li><a href="#">HOME</a></li>
+                        <li><a href="#">ABOUT</a></li>
+                        <li><a href="#">SERVICES</a></li>
+                        <li><a href="#">PROJECTS</a></li>
+                        <li><a href="#">PAGES</a></li>
+                        <li><a href="#">CONTACT</a></li>
+                        <li><a class = "bg-main text-white h-full p-5 " href="">Get A Quote <i class="ml-3 fa-solid fa-arrow-right"></i></a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <!-- mobile  -->
+        <div class="navb bg-black lg-size lg:hidden block">
+            <div class = "container mx-auto px-4">
+                <nav class="flex justify-between  h-20 items-center">
+                    <div class="logo">
+                        <a class =  "text-5xl text-white" href="#"> <span class = "uppercase">W</span>oo<span class = "uppercase">dy</span></a>
+                    </div>
+                    <div>
+                        <ul class = "absolute mobile-nav text-black left-0 gap-3 w-52 top-0 bg-white z-50 h-screen flex flex-col">
+                            <li class = "ml-5 mt-5 mb-3"><a class = "text-black text-4xl" href="#"> <span class = "uppercase">W</span>oo<span class = "uppercase">dy</span></a></li>
+                            <li class = "ml-5"><a href="#">HOME</a></li>
+                            <li class = "ml-5"><a href="#">ABOUT</a></li>
+                            <li class = "ml-5"><a href="#">SERVICES</a></li>
+                            <li class = "ml-5"><a href="#">PROJECTS</a></li>
+                            <li class = "ml-5"><a href="#">PAGES</a></li>
+                            <li class = "ml-5"><a href="#">CONTACT</a></li>
+                          
+                        </ul>
+                    </div>
+                    <div>
+                        <i id = "openMenu" class="fa-solid fa-bars text-2xl text-white"></i>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <!-- mobile  -->
+
+        <!-- mobile  -->
+    <!-- navbar -->
+        <div class="hero-section">
+            <div class="">
+                <div class = "m-auto">
+                    <div class = "container  mx-auto p-4  flex justify-center gap-6 flex-col">
+                        <h1 class = "text-5xl md:text-5xl lg:text-8xl">Creative <br> Work Idea</h1>
+                        <p>There are many variations of passages of Lorem Ipsum
+                         available, but the majority have suffered alteration</p>
+                        <div class = "flex gap-4">
+                            <button class = "bg-black text-white h-16 w-48">About Company</button>
+                            <button class = "bg-black text-white h-16 w-48">Contact</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+   </header>
+
+
+   <!-- main start -->
+ <main>
+    <!-- what we do -->
+    <section class = "mt-24">
+        <div>
+            <div class="container mx-auto px-4">
+                <h2 class = "text-center text-3xl md:text-4xl lg:text-5xl font-[700]">What We do</h2>
+                <!-- row -->
+                 <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-5 mt-10">
+                    <!-- col -->
+                        <div class="w-col flex flex-col gap-8 p-8 border">
+                            <img class = "w-20" src="./images/dev-1.png" alt="">
+                            <h4 class = "text-2xl font-[600]">WEBSITE
+                                DEVELOPMENT
+                            </h4>
+                            <p>many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which</p>
+                           <div> <button class = "bg-gray-700 text-white flex py-2 px-6">Read More</button></div>
+                        </div>
+                        <div class="w-col flex flex-col gap-8 p-8 border">
+                            <img class = "w-20" src="./images/dev-2.png" alt="">
+                            <h4 class = "text-2xl font-[600]">APP
+                                DEVELOPMENT
+                            </h4>
+                            <p>many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which</p>
+                           <div> <button class = "bg-gray-700 text-white flex py-2 px-6">Read More</button></div>
+                        </div>
+                        <div class="w-col flex flex-col gap-8 p-8 border">
+                            <img class = "w-20" src="./images/dev-3.png" alt="">
+                            <h4 class = "text-2xl font-[600]">WEBSITE
+                                DESIGN
+                            </h4>
+                            <p>many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which</p>
+                           <div> <button class = "bg-gray-700 text-white flex py-2 px-6">Read More</button></div>
+                        </div>
+                    <!-- col -->
+                </div>
+            </div>
+        </div>
+   </section>
+<!-- what we do -->
+<!-- why choose -->
+<section class = "mt-24">
+    <div class = "why-choose bg-black">
+        <div class ="py-16">
+            <div class="container mx-auto px-4">
+                <h2 class = "text-center text-3xl md:text-4xl lg:text-5xl font-[700] text-white">What We do</h2>
+                <!-- row -->
+                 <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mt-10">
+                    <!-- col -->
+                        <div class = "choose-col">
+                            <div class = "flex flex-col gap-7">
+                                <img class = "w-16" src="./images/choose-1.png" alt="no image found">
+                             <div>
+                                <h2 class = "text-4xl mb-2 text-white font-[600]">Project Done</h2>
+                                <p class = "text-white text-5xl font-[800]">1000+</p>
+                             </div>
+                             <div><button class = "py-3 px-10 text-black bg-white ">Read More</button></div>
+                            </div>
+                        </div>
+                        <div class = "choose-col ">
+                            <div class = "flex flex-col gap-7">
+                                <img class = "w-16" src="./images/choose-2.png" alt="no image found">
+                             <div>
+                                <h2 class = "text-4xl mb-2 text-white font-[600]">Project Done</h2>
+                                <p class = "text-white text-5xl font-[800]">1000+</p>
+                             </div>
+                             <div><button class = "py-3 px-10 text-black bg-white ">Read More</button></div>
+                            </div>
+                        </div>
+                        <div class = "choose-col">
+                            <div class = "flex flex-col gap-7">
+                                <img class = "w-16" src="./images/choose-3.png" alt="no image found">
+                             <div>
+                                <h2 class = "text-4xl mb-2 text-white font-[600]">Project Done</h2>
+                                <p class = "text-white text-5xl font-[800]">1000+</p>
+                             </div>
+                             <div><button class = "py-3 px-10 text-black bg-white ">Read More</button></div>
+                            </div>
+                        </div>
+                    <!-- col -->
+                  </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- why choose -->
+ <!-- portfolio -->
+
+ <section class = "mt-24">
+    <div class="portfolio">
+        <div class="container mx-auto px-4">
+         
+            <h2  class = "text-3xl md:text-4xl lg:text-5xl font-[700] text-black  mb-10">We Have Done Portfolio</h2>
+             <!--  portfolio row-->
+            <div class="portfolio-row grid  md:grid-cols-2 lg:grid-cols-2 gap-6 ">
+                <!--  portfolio col-->
+                <div class = " portfolio-col">
+                    <img src="./images/portfolio1.png" alt="no image found">
+                    <div class = "portfolio-overlay p-8">
+                        <div class = "overlay-icon"><i class="fa fa-link text-black p-4 bg-white border rounded-full shadow-2xl "></i><i class="fa fa-search text-black p-4 bg-white border rounded-full shadow-2xl"></i></div>
+                        <h4 class="z-50 text-black text-3xl font-[700] ">Carrency Dashbord</h4>
+                        <p class = "text-gray-800 mt-6">There are many variations of passages of Lorem Ipsum available, but the majoraity have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable</p>
+                    </div>
+                </div>
+                <div class = " portfolio-col">
+                    <img src="./images/portfolio2.png" alt="no image found">
+                    <div class = "portfolio-overlay p-8">
+                        <div class = "overlay-icon"><i class="fa fa-link text-black p-4 bg-white border rounded-full shadow-2xl "></i><i class="fa fa-search text-black p-4 bg-white border rounded-full shadow-2xl"></i></div>
+                        <h4 class="z-50 text-black text-3xl font-[700] ">Carrency Dashbord</h4>
+                        <p class = "text-gray-800 mt-6">There are many variations of passages of Lorem Ipsum available, but the majoraity have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable</p>
+                    </div>
+                </div>
+                <div class = " portfolio-col">
+                    <img src="./images/portfolio3.png" alt="no image found">
+                    <div class = "portfolio-overlay p-8">
+                        <div class = "overlay-icon"><i class="fa fa-link text-black p-4 bg-white border rounded-full shadow-2xl "></i><i class="fa fa-search text-black p-4 bg-white border rounded-full shadow-2xl"></i></div>
+                        <h4 class="z-50 text-black text-3xl font-[700] ">Carrency Dashbord</h4>
+                        <p class = "text-gray-800 mt-6">There are many variations of passages of Lorem Ipsum available, but the majoraity have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable</p>
+                    </div>
+                </div>
+                <div class = " portfolio-col">
+                    <img src="./images/portfolio4.png" alt="no image found">
+                    <div class = "portfolio-overlay p-8">
+                        <div class = "overlay-icon"><i class="fa fa-link text-black p-4 bg-white border rounded-full shadow-2xl "></i><i class="fa fa-search text-black p-4 bg-white border rounded-full shadow-2xl"></i></div>
+                        <h4 class="z-50 text-black text-3xl font-[700] ">Carrency Dashbord</h4>
+                        <p class = "text-gray-800 mt-6">There are many variations of passages of Lorem Ipsum available, but the majoraity have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable</p>
+                    </div>
+                </div>
+   
+                <!--  portfolio col-->
+            </div>
+            <!-- portfolio row-->
+        </div>
+    </div>
+</section>
+ <!-- portfolio -->
+   <!-- contact -->
+   <section class = "mt-24">
+    <div class = "why-choose">
+        <div class ="py-16">
+            <div class="container mx-auto px-4">
+                <!-- row -->
+                 <div class="grid md:grid-cols-2 gap-8 mt-10">
+                    <!-- col -->
+                    <div>
+                        <h2 class = " text-3xl md:text-4xl lg:text-5xl font-[700] text-black">What Says Clients</h2>
+                      <!-- Swiper -->
+                            <div class="swiper what-client-says mt-20">
+                                <div class="swiper-wrapper">
+                                <div class="swiper-slide p-4">
+                                    <div class ="flex justify-between">
+                                        <div class = "flex flex-col gap-5">
+                                            <img src="./images/client.jpg" alt="no image found">
+                                            <h3 class = "text-3xl font-[700]">Deno</h3>
+                                        </div>
+                                        <div>
+                                           <img src="./images/icon.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class = "mt-4">
+                                        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem IpsumIt is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum</p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class ="flex justify-between">
+                                        <div class = "flex flex-col gap-5">
+                                            <img src="./images/client.jpg" alt="no image found">
+                                            <h3 class = "text-3xl font-[700]">Deno</h3>
+                                        </div>
+                                        <div>
+                                           <img src="./images/icon.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class = "mt-4">
+                                        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem IpsumIt is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum</p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class ="flex justify-between">
+                                        <div class = "flex flex-col gap-5">
+                                            <img src="./images/client.jpg" alt="no image found">
+                                            <h3 class = "text-3xl font-[700]">Deno</h3>
+                                        </div>
+                                        <div>
+                                           <img src="./images/icon.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class = "mt-4">
+                                        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem IpsumIt is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum</p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class ="flex justify-between">
+                                        <div class = "flex flex-col gap-5">
+                                            <img src="./images/client.jpg" alt="no image found">
+                                            <h3 class = "text-3xl font-[700]">Deno</h3>
+                                        </div>
+                                        <div>
+                                           <img src="./images/icon.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class = "mt-4">
+                                        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem IpsumIt is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum</p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class ="flex justify-between">
+                                        <div class = "flex flex-col gap-5">
+                                            <img src="./images/client.jpg" alt="no image found">
+                                            <h3 class = "text-3xl font-[700]">Deno</h3>
+                                        </div>
+                                        <div>
+                                           <img src="./images/icon.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class = "mt-4">
+                                        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem IpsumIt is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum</p>
+                                    </div>
+                                </div>
+                                </div>
+                             <div class = " ">
+                                <div class="swiper-button-next"></div>
+                                <div class="swiper-button-prev"></div>
+                             </div>
+                            </div>
+
+                        <!-- Swiper JS -->
+                    
+                    </div>
+                    <div>
+                        <h2 class = " text-3xl md:text-4xl lg:text-5xl font-[700] text-black mb-10">Get In Touch</h2>
+                        <div>
+                            <form action="!#">
+                                <div class = "flex flex-col gap-7">
+                                    <input class = "p-5 border outline-none " type="text" placeholder="Name" name="" id="" required>
+                                    <input class = "p-5 border outline-none " type="number" placeholder="Phone Number" name="" id="" required>
+                                    <input class = "p-5 border outline-none " type="email" placeholder="Email" name="" id="" required>
+                                    <textarea class = "py-16 px-5 border outline-none " placeholder = "Messages" required></textarea>
+                                    <div><button class = "py-7 px-20 mt-5 bg-black text-white">SEND NOW</button></div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <!-- col -->
+                  </div>
+            </div>
+        </div>
+    </div>
+</section>
+   <!--contact-->
+   <!-- our services -->
+ 
+   <!-- our services -->
+
+
+
+ </main>
+ <!-- main section -->
+ <!-- footer section -->
+ <footer class = "mt-24">
+    <div class="footer bg-black py-20">
+        <div class="container mx-auto px-4"> 
+            <!-- footer row -->
+            <div class="footer-row grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-4">
+                <!-- footer col -->
+                <div class="footer-col text-white">
+                    <ul class = "flex flex-col gap-7">
+                        <h2 class = "text-2xl font-[600]">Address</h2>
+                     <div class = "flex flex-col gap-3">
+                        <li><i class="fa fa-map-marker-alt me-3"></i>123 Street, New York, USA</li>
+                        <li><i class="fa fa-phone-alt me-3"></i>+012 345 67890</li>
+                        <li><i class="fa fa-envelope me-3"></i>info@example.com</li>
+                        <li>
+                            <a href="#"><i class = 'fab fa-facebook p-3 border hover-transition hover:bg-white hover:text-main '></i></a>
+                            <a href="#"><i class = 'fab fa-whatsapp p-3 border  hover-transition hover:bg-white hover:text-main '></i></a>
+                            <a href="#"><i class = 'fab fa-twitter p-3 border hover-transition hover:bg-white hover:text-main '></i></a>
+                            <a href="#"><i class = 'fab fa-telegram p-3 border hover-transition hover-transition hover:bg-white hover:text-main '></i></a>
+                        </li>
+                     </div>
+                   
+                    </ul>
+                   
+                </div>
+                <div class="footer-col text-white">
+                    <ul class = "flex flex-col gap-7">
+                        <h2 class = "text-2xl font-[600]">Services</h2>
+                     <div class = "flex flex-col gap-7 ">
+                      <li class = "text-light hover:text-main hover:tracking-widest hover-transition">
+                        <p class = "font-[600] mb-2">Monday-Friday</p>
+                        <p>9.00 AM -8.00 PM</p>
+                      </li>
+                      <li class = "text-light hover:text-main hover:tracking-widest hover-transition">
+                        <p class = "font-[600] mb-2">Saturday-Sunday</p>
+                        <p>9.00 AM - 11.00 PM</p>
+                      </li>
+            
+                    
+                     </div>
+                   
+                    </ul>
+                </div>
+                <div class="footer-col text-white">
+                    <ul class = "flex flex-col gap-7">
+                        <h2 class = "text-2xl font-[600]">Services</h2>
+                     <div class = "flex flex-col gap-3 ">
+                      <li> <a class = "text-light hover:text-main hover:tracking-widest hover-transition" href="#"><i class="fa-solid fa-angle-right mr-2"></i>Diagonostic Test</a></li>
+                      <li> <a class = "text-light hover:text-main hover:tracking-widest hover-transition" href="#"><i class="fa-solid fa-angle-right mr-2"></i>Engine Servicing</a></li>
+                      <li> <a class = "text-light hover:text-main hover:tracking-widest hover-transition" href="#"><i class="fa-solid fa-angle-right mr-2"></i>Tires Replacement</a></li>
+                      <li> <a class = "text-light hover:text-main hover:tracking-widest hover-transition" href="#"><i class="fa-solid fa-angle-right mr-2"></i>Oil Changing </a></li>
+                      <li> <a class = "text-light hover:text-main hover:tracking-widest hover-transition" href="#"><i class="fa-solid fa-angle-right mr-2"></i>Vacum Cleaning</a></li>
+                    
+                     </div>
+                   
+                    </ul>
+                </div>
+                <div class="footer-col text-whit">
+                    <ul class = "flex flex-col gap-7">
+                        <h2 class = "text-2xl font-[600]">Newsletter</h2>
+                       <div class = "flex flex-col gap-3 ">
+                        <li><p>Dolor amet sit justo amet elitr clita ipsum elitr est.</p></li>
+                        <li><div class = "relative">
+                            <input type="email" class = "p-4 w-full text-black outline-none border-none" placeholder="Your Email" >
+                                <button type = "submit" class = "absolute top-0 right-0 bg-main h-full px-6">Sign Up</button>
+                        </div></li>
+                        
+                     </div>
+                     
+                    </ul>
+                </div>
+                <!-- footer col -->
+            </div>
+             <!-- footer row -->
+             <hr class = "my-8 w-full bg-white opacity-75">
+             <div>
+                
+                <p class = " text-white flex items-center justify-center">&copyRafi,All Right Reserved.</p>
+             </div>
+        </div>
+    </div>
+ </footer>
+ <!-- footer section -->
+
+ 
+ <!-- swipper js link  -->
+ <!-- swipper js link  -->
+ <script src="./js/swiper-bundle.min.js"></script>
+ <script src = "./js/script.js"></script>
+</body>
+</html>

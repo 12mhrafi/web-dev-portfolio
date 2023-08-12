@@ -1,0 +1,95 @@
+
+html{
+    scroll-behavior: smooth;
+    font-size: 1rem;
+}
+.hover-transition{
+    transition:all 300ms linear;
+}
+img{
+    width:100%;
+    object-fit: cover;
+    height: 300px;
+}
+.navb{
+    position:sticky;
+    right: 0;
+    left: 0;
+    top:0;
+    z-index:400;
+    box-shadow: 5px 5px 2px rgba(213, 210, 210, 0.6);
+    transition:all 500ms ease;
+}
+.mobile-nav{
+    transform:translateX(-15rem);
+    transition: all 300ms;
+    position: fixed;
+}
+.mobile-nav.active{
+    transform:translateX(0rem);
+}
+.services-col{
+    overflow: hidden !important;
+}
+.services-col img{
+    transition:all 300ms;
+}
+.services-col img:hover{
+    transform: scale(1.1);
+}
+.img-slider::before{
+    position:absolute;
+    content:'';
+    top:0;
+    right: 0;
+    left:0;
+    bottom:0;
+    background:rgba(0,0,0,0.7);
+    z-index:10;
+}
+
+
+/* total success */
+.book-service-overlay::before,
+.total-success-row::before{
+    content: '';
+    position: absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background-color: rgba(0,0,0,0.7);
+
+}
+/* toatl success */
+/* portfolio */
+.portfolio-col{
+    position: relative;
+    overflow: hidden;
+    transition:all 500ms ease-in;
+}
+.portfolio-overlay{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color:white;
+    right: 0;
+    background-color: #fff;
+    height: 14rem;
+    transform: translateY(18rem);
+    transition: transform 500ms ease-in;
+}
+.overlay-icon{
+    transform:translateY(-4rem);
+    position: absolute;
+    transition:transform 500ms ease-in;
+}
+.portfolio-col:hover,
+.overlay-ico:hover,
+.portfolio-col:hover .portfolio-overlay{
+    transform: translateY(0rem);
+    box-shadow: 0px 3px 16px rgb(0 0 0 / 13%);
+
+   
+
+}
